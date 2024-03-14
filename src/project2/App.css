@@ -1,0 +1,103 @@
+
+input {
+    border: none;
+    box-shadow: 0px 0px 10px rgba(67, 65, 65.4);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  
+  input:focus {
+    text-decoration: none;
+  }
+  
+  input:focus-within {
+    border: 2px solid aqua;
+  }
+  
+  .App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  Button {
+    width: auto;
+    padding: 10px 30px;
+    margin: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px rgba(67, 65, 65.4);
+    font-size: 1.2rem;
+    border-radius: 200px;
+    cursor: pointer;
+  }
+  
+  Button:hover {
+    color: red;
+    box-shadow: 0px 0px 10px rgb(12, 12, 12);
+  }
+  Button:active {
+    color: red;
+  }
+  .item-container{
+    border: 2px solid red;
+  }
+  
+  /* :start addlist item */
+  .list-container{
+    border: 2px solid red;
+    background-color: rgb(170, 170, 218);
+    display: grid;
+    place-items: center;
+    padding: 30px;
+  }
+  .list-img p{
+    color: white;
+  }
+  
+  .list-img img{
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+  }
+  .additem .fa-solid{
+    border: none;
+    background-color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    
+  }
+  .fa-plus:hover{
+    background-color: red;
+  }
+ 
+  .eachitem{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    border-radius: 25px;
+    margin-left: -60px;
+    margin-top: 20px;
+    outline: 2px solid rebeccapurple;
+  }
+  .eachitem h5{
+    float: left;
+    display: flex;
+    gap: 10px;
+   
+  }
+  .eachitem .fa-solid{
+    float: right;
+  }
+  .fa-edit{
+    color: green;
+  }
+  .fa-trash{
+    color: red;
+  }

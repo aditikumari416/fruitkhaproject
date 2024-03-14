@@ -1,0 +1,953 @@
+ .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  } 
+} 
+/* <star fruit kha> */
+
+
+
+.container-fluid {
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  background-color: #051922;
+
+
+}
+
+
+.navbar {
+  
+text-transform: capitalize;
+margin-top: 20px;
+margin-left: 9rem;
+}
+
+.navbar li {
+  list-style: none;
+  
+
+}
+
+.navbar li a {
+ 
+  text-decoration: none;
+  color: white;
+
+}
+.img img{
+  margin-top: 5px;
+}
+
+.col-5 ul li a:hover {
+  color: orange;
+
+}
+
+/*start dropdown*/
+.dropdown-home {
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  padding-right: 90px;
+  display: none;
+}
+
+.dropdown-home li a {
+  color: black;
+}
+.dropdown-home li {
+  padding-bottom: 10px;
+}
+
+.col-5 ul li:hover .dropdown-home {
+  display: block;
+  font-weight: none;
+}
+
+.dropdown-pages {
+  position: absolute;
+  border-radius: 5px;
+  padding: 20px;
+  display: none;
+  background-color: white;
+}
+
+.dropdown-pages li a {
+  color: black;
+  line-height: 40px;
+
+}
+.dropdown-pages li{
+ padding-right: 90px;
+
+}
+
+.col-5 ul li:hover .dropdown-pages {
+  display: block;
+  font-weight: none !important;
+}
+
+.dropdown-news {
+  position: absolute;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+  background-color: white;
+}
+
+.dropdown-news li a {
+  color: black;
+  line-height: 30px;
+
+}
+.dropdown-news li{
+  padding-right: 90px;
+  padding-bottom: 10px;
+  text-align: start;
+
+}
+
+.col-5 ul li:hover .dropdown-news {
+  display: block;
+  font-weight: none !important;
+}
+
+.col-1 a {
+  color: white;
+  gap: 10px;
+}
+
+.navbar .active{
+  color: orange;
+}
+.col-1 a:hover{
+   color: orange;
+}
+
+/* start body */
+ .container-fluid-2 {
+  height: 600px;
+  background-image: url(../src/img/bg\ frut.jpg);
+  background-repeat: no-repeat !important;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.active {
+  color: orange !important;
+}
+
+.row-fluid-2 {
+  height: 600px;
+  background-color: #051922bd;
+}
+
+.col-fluid-2 {
+  position: relative;
+  text-align: center;
+  padding: 100px;
+}
+
+.col-fluid-2 h1,h3,span {
+   padding-top: 20px;
+  padding-bottom: 40px;
+}
+.col-fluid-2 h3 {
+   padding-top: 50px;
+
+}
+
+.col-fluid-2 h3 {
+  color: orange;
+  letter-spacing: 2px;
+}
+
+.col-fluid-2 h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.col-fluid-2 span button {
+  padding: 10px 40px 10px 40px;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  color: white;
+  margin: 10px;
+}
+
+.col-fluid-2 span :first-child {
+  background-color: orange;
+}
+
+.col-fluid-2 span :first-child:hover {
+  background-color: #051922;
+  color: orange;
+}
+
+.col-fluid-2 span :last-child {
+  background-color: transparent;
+  outline: 2px solid orange;
+}
+
+.col-fluid-2 span :last-child:hover {
+  background-color: orange;
+} 
+
+/* start icon*/
+.container-icon{ 
+  background-color: rgba(0, 0, 255, 0.096);
+  padding-bottom: 40px;
+}
+.col-md-4 {
+  text-align: center;
+  padding: 20px;
+
+}
+.card{
+  border: none;
+ 
+}
+
+.col-md-4 i {
+  border: 2px dotted orangered;
+  font-size: 38px;
+  border-radius: 50%;
+  padding: 10px;
+  color: orangered;
+}
+
+.container-icon {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.card {
+  margin: 80px;
+  margin-bottom: 50px;
+
+} 
+
+/* start fruitcard*/
+.container-fruit-card {
+  padding-top: 70px;
+}
+
+.row-fruit-card {
+  position: relative;
+  align-items: center;
+  height: 150px;
+
+}
+
+.col-fruit-card {
+  
+  position: absolute;
+  left: 500px;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.col-fruit-card h1 :first-child {
+  color: orangered;
+}
+.col-fruit-card  h1::after{
+  content: "";
+  display: block;
+  width: 52px;
+  height: 3px;
+  background-color: orangered;
+  position: absolute;
+  left: 16rem;
+}
+
+.col-fruit-card h1{
+  font-weight: bold;
+  
+}
+.col-fruit-card p{
+  color: black;
+  text-align: center;
+  
+}
+.card{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-body button {
+  
+  padding: 10px 30px 10px 30px;
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 50px;
+  text-transform: capitalize;
+}
+
+.card-body button:hover {
+  color: orangered;
+  background-color: #051922;
+}
+
+.card-body h1,p,h5,button {
+  text-align: center;
+ 
+}
+.card-body p{
+ color: black;
+ text-align: center;
+}
+.card-body h5{
+  text-align: center;
+  font-weight: bold;
+}
+
+/*start date of month*/
+ 
+.row-month {
+  background-color: rgba(235, 189, 196, 0.255);
+  height: 600px;
+  display: flex;
+}
+.offer {
+  
+  background-image: url(../src/img/berry.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 100px;
+  margin-right: 50px;
+  margin-left: 90px;
+  height: 500px;
+  width: 600px;
+  border-radius: 20px;
+
+}
+
+.off {
+  
+  margin-left: 90px;
+  height: 100px;
+  width: 100px;
+  background-color: orangered;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+  outline: 5px solid orange;
+}
+
+.off h1,p {
+  text-align: center;
+}
+
+.col-month h1 {
+  font-weight: bold;
+}
+
+.col-month h1,h5,p {
+
+  text-align: start;
+}
+.col-month p {
+
+  text-align: start;
+}
+
+.text-month {
+  padding-top: 130px;
+}
+
+.text-month h1 :first-child {
+  color: orangered;
+}
+
+.date-container {
+  display: flex;
+  gap: 10px;
+}
+
+.date {
+
+  width: 90px;
+  border: 2px solid orangered;
+}
+
+.date :first-child {
+  text-align: center;
+  color: orangered;
+}
+
+.date :last-child {
+  text-align: center;
+}
+
+.text-month button {
+  padding: 10px 30px 10px 30px;
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 50px;
+  text-transform: capitalize;
+}
+.text-month p{
+  color: black;
+}
+
+.text-month button:hover {
+  color: orangered;
+  background-color: #051922;
+
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+
+
+
+/*start we are fruitkha*/
+.container-fruitkha {
+  height: 600px;
+  background-color: rgba(235, 189, 196, 0.255);
+}
+
+.row-fruitkha {
+  height: 600px;
+  display: flex;
+}
+
+.col-text p {
+  text-align: start;
+}
+
+.col-fruitkha h1 {
+  font-weight: bold;
+}
+
+.text-fruitkha {
+  padding-top: 100px;
+}
+
+.text-fruitkha h1 {
+  text-align: start;
+}
+.text-fruitkha p{
+  color: black;
+}
+
+.text-fruitkha h1 :last-child {
+  color: orangered;
+}
+
+.text-fruitkha button {
+  padding: 10px 30px 10px 30px;
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 50px;
+  text-transform: capitalize;
+}
+
+.text-fruitkha button:hover {
+  color: orangered;
+  background-color: #051922;
+
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.video {
+  margin-left: 190px;
+  height: 100px;
+  width: 100px;
+  margin-top: 200px;
+
+}
+
+.video1 {
+  height: 100px;
+  width: 100px;
+  background-color: orangered;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+}
+
+.video1 a {
+  color: black;
+}
+
+.video1 a i {
+  font-size: 30px;
+  margin-top: 25px;
+}
+
+.off h1,
+p {
+  text-align: center;
+}
+
+.youtube {
+  height: 500px;
+  width: 600px;
+  border: 2px solid white;
+  background-image: url(../src/img/vegi.jpg);
+  background-size: cover;
+  margin: 60px;
+  border-radius: 20px;
+}
+
+/*start december sale*/
+
+.container-discount {
+  background-image: url(../src/img/bgbery.jpg);
+  background-size: cover;
+  height: 500px;
+
+}
+
+.row-discount {
+  height: 500px;
+}
+
+.text-discount {
+  height: 300px;
+  width: 600px;
+  padding: 100px;
+}
+
+.col-discount p {
+  text-align: start;
+}
+
+.col-discount h1 {
+  font-weight: bold;
+}
+
+.text-discount {
+  padding-top: 100px;
+}
+
+.text-discount h1 {
+  text-align: start;
+}
+
+.text-discount h1 :last-child {
+  color: orangered;
+}
+
+.text-discount p span {
+  font-size: 30px;
+  color: black;
+}
+
+.text-discount p span:nth-child(2) {
+  font-size: 50px;
+  color: orangered;
+}
+
+.text-discount button {
+  padding: 10px 30px 10px 30px;
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 50px;
+  text-transform: capitalize;
+}
+
+.text-discount button:hover {
+  color: orangered;
+  background-color: #051922;
+
+}  
+
+
+/* start our newsss */
+ .container-ournews {
+  padding-top: 70px;
+  background-color: lightgray;
+  width: 100%;
+}
+
+.container-ournews .row-ournews {
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 30px;
+  gap: 30px;
+  margin-left: 60px;
+}
+
+.col-ournews h1 span:nth-last-child(1)::after{
+  content: " ";
+  display: block;
+  height: 3px;
+  width: 50px;
+  position: absolute;
+  right:41.3rem;
+  background-color: orangered;
+}
+
+.col-ournews h1 :first-child {
+  color: orangered;
+  font-weight: bold;
+}
+
+.col-ournews h1 {
+  
+  font-weight: bold;
+}
+.col-ournews p{
+  color: black;
+}
+
+.card-ournews {
+  position: relative;
+  width: 350px;
+  height: 640px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+
+.card-ournews .img-ournews {
+  height: 250px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.card-ournews .img-ournews img {
+  height: 100%;
+  width: 100%;
+  transition: 0.25s linear;
+}
+
+.text-ournews h3,
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.text-ournews h3 a{
+  text-decoration: none;
+  color: black;
+  text-align: start;
+  padding: 22px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-ournews p {
+  text-align: start;
+  padding-left: 30px;
+  color: black;
+}
+
+.card-ournews:hover img {
+  transform: scale(1.1);
+}
+
+.text-ournews h3 a:hover {
+  color: orange;
+}
+
+.comment span i {
+  color: orange;
+}
+
+.comment span {
+  text-align: start;
+}
+
+.ournews-button {
+  
+  margin: 50px;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+
+}
+
+.ournews-button a{
+  text-decoration: none;
+  padding: 10px 30px 10px 30px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 10px;
+  cursor: pointer;
+} 
+
+/* start logos */
+
+.container-logo {
+  width: 100%;
+
+  background-color: rgba(225, 218, 219, 0.138);
+}
+
+.col-logo {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 90px;
+
+}
+
+/*start footer*/
+.container-footer {
+  height: 500px;
+  background-color: #051922;
+}
+
+.row-footer {
+  position: relative;
+  text-align: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.col-footer {
+  width: 400px;
+  height: 300px;
+  padding: 30px;
+  list-style: none;
+}
+
+.col-footer ul li {
+  list-style: none;
+}
+
+.col-footer ul li span {
+  color: orangered;
+}
+
+.col-footer h3,h6,p{
+  color: white;
+  text-align: start;
+
+}
+
+.col-footer h3::after{
+  content: "";
+  display: block;
+  width:30px;
+  height: 3px;
+  background-color: orangered;
+}  
+
+
+/* start contact pagess */
+
+
+.contact{
+ 
+  padding: 5rem;
+  padding-top: 70px;
+  background-color: #236888;
+}
+.contact-head{
+ 
+  margin: auto;
+  width: 400px;
+  height: auto;
+  text-align: center;
+  align-items: center;
+}
+.contact-head p{
+  margin-top: 40px;
+  text-align: center;
+  color: orangered;
+}
+.contact-head h1{
+  text-transform: uppercase;
+  color: white;
+}
+.contact-detail{
+  
+  display: grid;
+  justify-content: space-around;
+  gap: 20px;
+  grid-template-columns: auto auto;
+  padding: 40px;
+}
+.query-contact{
+  width: 800px;
+  height: auto;
+  
+  padding: 30px;
+}
+.query-contact p{
+  color: black;
+}
+.query-contact h2{
+ font-weight: bold;
+ 
+}
+.query-contact input{
+ 
+ margin: 10px;
+ padding: 15px;
+ width: 19rem;
+ 
+}
+.contact-info{
+ 
+  background-color: #dfe2e4;
+  padding: 20px;
+  text-transform: capitalize;
+  margin-right: 60px;
+}
+
+.address p{
+  color: black;
+}
+.address h4{
+ font-weight: bold;
+}
+
+.fa-solid{
+  color: orangered;
+}
+
+
+/* <form register */
+
+.register{
+  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #b0dbef;
+}
+.register label{
+  padding:8px ;
+}
+.register button{
+  margin: 9px;
+}
+
+.data{
+  height: 300px;
+  display: flex;
+  gap: 40px;
+  border: 2px solid red;
+  background-color: #236888;
+}
+
+/* .registerforem :start */
+
+.register form{
+  background-color: rgb(176, 229, 229);
+  border: 2px solid black;
+}
+.register input{
+
+  border: 2px solid red;
+  margin: 10px;
+  display: flex;
+
+}
+
+.colors{
+  background-color: #236888;
+}
+
+
+/* add table2 */
+
+input {
+  border: none;
+  box-shadow: 0px 0px 10px rgba(67, 65, 65.4);
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+input:focus {
+  text-decoration: none;
+}
+
+input:focus-within {
+  border: 2px solid aqua;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+Button {
+  width: auto;
+  padding: 10px 30px;
+  margin: 10px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px rgba(67, 65, 65.4);
+  font-size: 1.2rem;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+Button:hover {
+  color: red;
+  box-shadow: 0px 0px 10px rgb(12, 12, 12);
+}
+Button:active {
+  color: red;
+}
+
+/* start addlistitem */
+
